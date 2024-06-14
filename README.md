@@ -1,22 +1,22 @@
-# AWS VPC Creation for EKS
+# 🌐 AWS VPC Creation for EKS
 
 This project contains Terraform scripts to create a VPC in AWS for EKS.
 
-## Prerequisites
+## ⚙️ Prerequisites
 
 - Terraform installed
 - AWS CLI installed and configured
 
-## Provider Configuration
+## 🔧 Provider Configuration
 
 The provider is configured to use the AWS region `us-east-1`.
 
-## Terraform Backend
+## 🗂️ Terraform Backend
 
 The state of the Terraform is stored in an S3 bucket
 named `ce5-group6-vpc-tf-state-bucket`.
 
-## Resources
+## 📦 Resources
 
 - An S3 bucket with versioning enabled: `ce5-group6-vpc-tf-state-bucket`
 - A VPC with the following configuration:
@@ -27,7 +27,7 @@ named `ce5-group6-vpc-tf-state-bucket`.
     - NAT gateway: Enabled
     - DNS hostnames: Enabled
 
-## Usage
+## 🚀 Usage
 
 To apply the Terraform scripts, navigate to the directory containing the scripts
 and run:
@@ -36,4 +36,3 @@ and run:
 terraform init
 terraform plan
 terraform apply
-```
